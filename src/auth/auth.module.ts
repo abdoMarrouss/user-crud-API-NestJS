@@ -18,10 +18,10 @@ import { AuthGuard, KeycloakConnectModule } from "nest-keycloak-connect";
     }),
   ],
   providers: [
-    {
-       provide: APP_GUARD,
-      useClass: AuthGuard,
-     },
+    // {
+    //    provide: APP_GUARD,
+    //   useClass: AuthGuard,
+    //  },
     AuthService
   ],
   exports: [
