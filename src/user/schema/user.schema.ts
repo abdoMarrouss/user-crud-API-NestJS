@@ -8,6 +8,7 @@ export class User {
 
 
   @Prop()
+
   name: string;
 
   @Prop()

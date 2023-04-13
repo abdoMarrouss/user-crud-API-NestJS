@@ -17,10 +17,6 @@ export class UserService {
     return user.save();
   }
 
-  /*async findAll(): Promise<UserDocument[]> {
-    return this.userModel.find()
-      .exec();
-  }*/
 
   async findOne(id: string) {
     return this.userModel.findById(id);
@@ -46,6 +42,14 @@ export class UserService {
       : {};
     return this.userModel.find(query).skip(page).limit(numberOfElements).exec();
   }
+
+
+
+
+  // async findAll(): Promise<UserDocument[]> {
+  //   return this.userModel.find()
+  //     .exec();
+  // }
 
   /*find(options) {
     if (options && options._id) {
